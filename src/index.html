@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Angular Foundation for Sites</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+    body, html {
+      height: 100%;
+    }
+    body {
+      background-color: #cacaca;
+    }
+    .app-loading {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    .app-loading .spinner {
+      height: 200px;
+      width: 200px;
+      animation: rotate 2s linear infinite;
+      transform-origin: center center;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    .app-loading .spinner .path {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+      animation: dash 1.5s ease-in-out infinite;
+      stroke-linecap: round;
+      stroke: #ddd;
+    }
+    @keyframes rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes dash {
+      0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+      }
+      50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+      }
+      100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+      }
+    }
+  </style>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=wAX3ana4Ol">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=wAX3ana4Ol">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=wAX3ana4Ol">
+  <link rel="manifest" href="/site.webmanifest?v=wAX3ana4Ol">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg?v=wAX3ana4Ol" color="#03629f">
+  <link rel="shortcut icon" href="/favicon.ico?v=wAX3ana4Ol">
+  <meta name="apple-mobile-web-app-title" content="ngx-foundation">
+  <meta name="application-name" content="ngx-foundation">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="theme-color" content="#03629F">
+</head>
+<body>
+  <app-root>
+    <noscript>Please enable JavaScript to view ngx-foundation documentation.</noscript>
+    <div class="app-loading">
+      <div><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMi4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCA0MTUuNiA0NDgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQxNS42IDQ0ODsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2Rpc3BsYXk6bm9uZTt9DQoJLnN0MXtmaWxsOiMwMzYyOUY7fQ0KCS5zdDJ7ZGlzcGxheTpub25lO29wYWNpdHk6MC4zO2ZpbGw6I0ZGRkZGRjtlbmFibGUtYmFja2dyb3VuZDpuZXcgICAgO30NCgkuc3Qze29wYWNpdHk6MC4zO2ZpbGw6I0ZGRkZGRjt9DQoJLnN0NHtkaXNwbGF5Om5vbmU7ZmlsbDojMDM2MjlGO30NCjwvc3R5bGU+DQo8cG9seWdvbiBjbGFzcz0ic3QwIiBwb2ludHM9IjE2OS43LDIzNi4xIDI0NS45LDIzNi4xIDIwNy44LDE0NC41ICIvPg0KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIzMzgsMzQxLjggMjg5LjQsMzQxLjggMjYzLjIsMjc2LjQgMTUyLjYsMjc2LjQgMTI2LjQsMzQxLjggNzcuNywzNDEuOCAyMDcuOCw0OS41ICIvPg0KPHBhdGggY2xhc3M9InN0MSIgZD0iTTIwNy44LDBMMCw3NC40bDMxLjgsMjc1LjdsMTc2LDk3LjlsMTc2LTk3LjlsMzEuOC0yNzUuN0wyMDcuOCwweiBNMzAzLjQsMTIwLjZIMTc3Ljh2NzJoMTE4LjF2MzguNkgxNzcuOA0KCXYxMTUuMWgtNDcuNlY4MmgxNzMuM3YzOC42SDMwMy40eiIvPg0KPHJlY3QgeD0iMjA3LjgiIGNsYXNzPSJzdDIiIHdpZHRoPSIyMDcuOCIgaGVpZ2h0PSI0NDgiLz4NCjxnIGlkPSJMYXllcl8yIj4NCgk8cG9seWxpbmUgY2xhc3M9InN0MyIgcG9pbnRzPSIyMDcuOCw0NDggMzgzLjgsMzUwLjEgNDE1LjYsNzQuNCAyMDgsMC4xIDIwOCwwLjEgCSIvPg0KCTxwb2x5bGluZSBjbGFzcz0ic3Q0IiBwb2ludHM9IjIwOCwwLjEgMjA3LjgsMCAwLDc0LjQgMzEuOCwzNTAuMSAyMDcuOCw0NDggCSIvPg0KCTxwb2x5bGluZSBjbGFzcz0ic3Q0IiBwb2ludHM9IjIwOCwyMjEgMjA4LDQ0NSAyMDgsMC4xIAkiLz4NCgk8bGluZSBjbGFzcz0ic3Q0IiB4MT0iMjA4IiB5MT0iMC4xIiB4Mj0iMjA4IiB5Mj0iMjIxIi8+DQoJPGxpbmUgY2xhc3M9InN0MSIgeDE9IjIwNy44IiB5MT0iMCIgeDI9IjAiIHkyPSI3NC40Ii8+DQo8L2c+DQo8L3N2Zz4NCg==" alt="ngx-foundation Logo that is in the shape of a shield, half blue and half light blue" style="width:90px; height:90px;"></div>
+      <svg class="spinner" viewBox="25 25 50 50">
+        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+      </svg>
+    </div>
+  </app-root>
+</body>
+</html>

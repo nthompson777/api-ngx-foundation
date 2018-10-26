@@ -1,0 +1,41 @@
+// [THIS APP'S NAME] ONLY Custom Global Styles
+// -------------------------------
+
+main.grid-container-fluid,
+.panel-container {
+
+  @include breakpoint(small only) {
+    min-height: 100vh;
+  }
+}
+
+// Hide the side menu for the Home Page
+/* body:not([class]),
+body[class=""] {
+	.sidenav {
+    visibility: hidden;
+    
+    @include breakpoint(medium only) {
+      display: none;
+    }
+  }
+  
+  .router-content,
+  .hero,
+  .promo,
+  .promo-nested {
+
+    @include breakpoint(medium only) {
+      width: calc(100% - 1.25rem);
+    }
+  }
+} */
+
+code {
+	border-radius: $code-border-radius;
+}
+
+// Highlight.js Code Formatting
+.tabs-content code {
+	padding: 1rem !important;
+}

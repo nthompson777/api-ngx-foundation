@@ -1,0 +1,48 @@
+<div class="grid-container-fluid">
+  <div class="grid-x">
+    <div class="small-12 cell">
+      <span #top></span>
+      <header class="top-bar">
+        <div class="top-bar-left">
+          <div class="hamburger hide-for-medium" [attr.aria-expanded]="!isOffcanvas" aria-controls="offCanvasMenu" (click)="offcanvas.show()">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+          <a routerLink="/" (click)="select(appTitle)" title="{{appTitle}} Home">
+            <div class="mainlogo">
+            </div>
+            <div class="appTitle">
+              {{appTitle}}
+            </div>
+          </a>
+        </div>
+        <nav class="top-bar-right hide-for-small-only">
+          <ul class="menu">
+            <li><a href="https://github.com/nthompson777/ngx-foundation" target="_blank" (click)="offcanvas.hide()"><fa-icon [icon]="faGithubSquare" size="2x"></fa-icon></a></li>
+            <li><a href="https://twitter.com/nthompson777" target="_blank"  (click)="offcanvas.hide()"><fa-icon [icon]="faTwitterSquare" size="2x"></fa-icon></a></li>
+          </ul>
+        </nav>
+        
+        <nav [offcanvas]="isOffcanvas" class="off-canvas position-left" id="offCanvasMenu" aria-hidden="true" #offcanvas="bs-offcanvas"> 
+          <ul class="menu vertical">
+            <li class="main-title">Main Menu</li>
+            <li class="sm-icons"><a href="https://github.com/nthompson777/ngx-foundation" (click)="offcanvas.hide()" target="_blank" ><fa-icon [icon]="faGithubSquare" size="2x"></fa-icon> </a> <a href="https://twitter.com/nthompson777" (click)="offcanvas.hide()" target="_blank"><fa-icon [icon]="faTwitterSquare" size="2x"></fa-icon></a></li>
+            <li aria-hidden="true"><hr></li>
+            <li routerLinkActive="active"  
+            [routerLinkActiveOptions]="{ exact: true }"><a routerLink="/getting-started" (click)="offcanvas.hide()">Getting Started</a></li>
+            <li class="title">Components</li>
+            <li *ngFor="let link of links" 
+              routerLinkActive="active"  
+              [routerLinkActiveOptions]="{ exact: true }">
+              <a [routerLink]="['/components/', link.path]" (click)="offcanvas.hide()">{{ link.text }}</a>
+            </li> 
+          </ul>
+          <button class="close-button" aria-label="Close Menu" aria-controls="offCanvasMenu" type="button" (click)="offcanvas.hide()">
+            <span aria-hidden="true">×</span>
+          </button>
+        </nav>
+      </header>
+    </div><!-- / Parent cell -->
+  </div><!-- /grid-x -->
+</div><!-- /grid-container-fluid -->

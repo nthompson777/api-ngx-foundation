@@ -1,0 +1,17 @@
+.off-canvas .sm-icons a {
+  float: left; 
+  margin-right: 20px; 
+  margin-bottom: -10px;
+}
+
+
+.appTitle {
+  @media screen and (max-width: 275px) {
+    font-size: 0.8em;
+    margin-top: 10px;
+  }
+
+  @media screen and (max-width: 222px) {
+    display: none;
+  }
+}

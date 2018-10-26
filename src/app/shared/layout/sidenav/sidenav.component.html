@@ -1,0 +1,14 @@
+<div class="hide-for-small-only">
+  <ul class="menu vertical">
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a routerLink="/getting-started"> Getting Started</a></li>
+  </ul>
+  <ul class="menu vertical">
+    <li><hr></li>
+    <h6>Components</h6>
+    <li *ngFor="let link of links" 
+      routerLinkActive="active"  
+      [routerLinkActiveOptions]="{ exact: true }">
+      <a [routerLink]="['/components/', link.path]">{{ link.text }}</a>
+    </li>       
+  </ul>
+</div>

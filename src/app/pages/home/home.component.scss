@@ -1,0 +1,39 @@
+// Global Variable Overrides and Styles
+@import '../../../assets/scss/settings';
+
+.hero {
+
+  .hero-logo {
+    width: 275px;
+    height: 189px;
+    margin: 0 30px 10px 0;
+    
+    // Small ONLY
+		@media screen and (max-width: 640px) {
+      width: 225px;
+      height: 154px;
+    }
+  }
+
+  h1 {
+    font-size: 2.75em; // 3em;
+    
+    // Small ONLY
+		@media screen and (max-width: 640px) {
+      font-size: 2em;  
+    }
+  }
+}
+
+.promo {
+  text-align: center;
+  margin: -10px 0 50px;
+
+  h5 {
+    margin-top: 20px;
+  }
+
+  .cell {
+    padding-top: 70px;
+  }
+}

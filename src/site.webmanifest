@@ -1,0 +1,20 @@
+{
+    "name": "ngx-foundation",
+    "short_name": "ngx-foundation",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png?v=wAX3ana4Ol",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png?v=wAX3ana4Ol",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#cacaca",
+    "start_url": "/",
+    "display": "standalone"
+}

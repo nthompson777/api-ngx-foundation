@@ -1,0 +1,94 @@
+<section>
+  <h2>Getting Started</h2>
+  <p class="lead">
+    The best way to quickly integrate Foundation for Sites Components with Angular.  
+  </p>
+  <p>
+    ngx-foundation contains all core Foundation for Sites components powered by Angular. Original JS components like jQuery is not needed, but we are using markup and SCSS provided by Foundation for Sites. 
+  </p>
+  <p>Looking to integrate Bootstrap with your Angular SPA instead? Visit <a href="https://valor-software.com/ngx-bootstrap">ngx-bootstrap by Valor Software</a>.</p> 
+</section>
+
+<section>
+  <h3>Requirements</h3>
+  <ul>
+    <li>Foundation for Sites v6.4 or higher, SCSS version (CSS version coming soon)</li>
+    <li>Angular 6.X</li> 
+    <li>Angular project using SCSS as default</li>
+    <li>"<a href="https://github.com/ten1seven/what-input" target="_blank">what-input.js</a>" install optional (Note: jQuery is not needed for what-input to function properly)</li>
+  </ul>
+</section>
+
+<hr>
+
+<section>
+  <h3>Installation Instructions</h3>
+  <h4>Start New Project Using SCSS</h4>
+  <p>Using SCSS is recommended due to the ease of code maintainability and creating unique styles quickly using SCSS variables. After installing Angular CLI <code>yarn global add @angular/cli</code>, start a new project via the CLI:</p>
+  <pre><code highlight [code]="codeInstallNgNew"></code></pre>
+</section>
+
+<section>
+  <h4>Install ngx-foundation and Foundation for Sites</h4>
+  <pre><code highlight [code]="codeInstallNgx"></code></pre> 
+</section>
+
+<section>
+  <h4>Add ngx-foundation and Foundation Base Styles</h4>
+  <p>Import ngx-foundation base styles to your main <code>src/styles.scss</code></p>
+  <pre><code highlight [code]="ngxBaseStyles"></code></pre>
+</section>
+
+<section>
+  <h4>Keep Your Global Styles Light</h4>
+  <div class="accordion">
+    <p><a (click)="isCollapsed = !isCollapsed"
+      [attr.aria-expanded]="!isCollapsed"
+      aria-controls="collapseBasic">See the src/styles.scss file of this site</a> as an example of how we selectively chose the Foundation style modules to import.</p>
+    <pre id="collapseBasic" [collapse]="isCollapsed"><code highlight [code]="codeStylesNgx"></code></pre>
+  </div>
+</section>
+
+<section>
+  <p>If you plan on going the CSS route, grab Foundation for Sites default styles:</p>
+  <pre><code highlight [code]="codeInstallCDN"></code></pre>
+</section>
+
+<section>
+  <h4>Adding an ngx-foundation Component</h4>
+  <p>As an example, open <code>src/app/app.module.ts</code> and add the following:</p>
+  <pre><code highlight [code]="ngxComponents"></code></pre>
+</section>
+
+<section>
+  <p>Open <code>src/app/app.component.html</code> and add:</p>
+  <pre><code highlight [code]="ngxComponentHTML"></code></pre>
+  <br>
+  <p>If setup correctly, you should see a light green (or whatever color you assigned to $success-color) Callout box.</p>
+</section>
+
+<!-- 
+<section>
+  <h3>Starter Project</h3>
+  <p>The easiest way to get started is by cloning the starter project which sets up all base SCSS Foundation for Sites styling, a SCSS settings file so you can edit your own Foundation variables for unique styling, a global overrides file if you choose to add your own global styles, and lastly all ngx-foundation components and styles will be installed.</p>
+  <p>cd to the directory where you wish to install the starter project and run the following command:</p>
+  <pre><code highlight [code]="codeInstall04"></code></pre> <br>
+  <p>
+    <fa-icon [icon]="faArrowAltCircleRight" size="sm" class="color" [fixedWidth]="true"></fa-icon> More detailed instructions on how to implement and work with the Starter Project can be found on the README file <a href="https://github.com/nthompson777/ngx-foundation-starterkit">here.</a>
+  </p>
+</section> -->
+
+<hr> 
+<section>
+  <h3>Accessibility</h3>
+  <h4>Overview and Limitations</h4>
+  <p>The overall accessibility of any project built with ngx-foundation depends in large part on the author's markup, additional styling, and scripting they've included. However, provided that these have been implemented correctly, it should be perfectly possible to create websites and applications that fulfill <a href="https://www.w3.org/TR/WCAG20/" target="_blank"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0</a> (A/AA/AAA), <a href="https://www.section508.gov/" target="_blank">Section 508</a> and similar accessibility standards and requirements.</p>
+
+  <h4>Interactive components</h4>
+  <p>Interactive components - such as modal dialogs, dropdown menus and custom tooltips - are designed to work for touch, mouse and keyboard users. Through the use of relevant <a href="https://www.w3.org/WAI/intro/aria"  target="_blank"><abbr title="Web Accessibility Initiative">WAI</abbr>-<abbr title="Accessible Rich Internet Applications">ARIA</abbr></a> roles and attributes, these components should also be understandable and operable using assistive technologies (such as screen readers).</p>
+
+  <p>Authors need to include ARIA roles and attributes to more accurately convey the precise nature of their component.</p>
+
+  <h4>Color contrast</h4>
+  <p>Some colors that currently make up Foundation for Site's default palette - used throughout the framework for things such as button variations, callout variations, form validation indicators - lead to insufficient color contrast (below the recommended <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" target="_blank">WCAG 2.0 color contrast ratio of 4.5:1</a>) when used against a light background. Authors will need to manually modify/extend these default colors to ensure adequate color contrast ratios.</p>
+</section>
