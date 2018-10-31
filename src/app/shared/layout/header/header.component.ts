@@ -9,7 +9,7 @@ import { faAngleDoubleRight } from '@fortawesome/pro-regular-svg-icons';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  appTitle = 'ngx-foundation';
+  appName = 'ngx-foundation';
   list: any;
   selected: any;
   isOffcanvas = true;

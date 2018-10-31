@@ -1,10 +1,13 @@
 <section>
   <h2>Getting Started</h2>
   <p class="lead">
-    The best way to quickly integrate Foundation for Sites Components with Angular.  
+    The best way to quickly integrate Foundation for Sites Components with Angular 6 or 7.  
   </p>
   <p>
-    ngx-foundation contains all core Foundation for Sites components powered by Angular. Original JS components like jQuery is not needed, but we are using markup and SCSS provided by Foundation for Sites. 
+    <a href="https://github.com/nthompson777/ngx-foundation/blob/master/CHANGELOG.md">View the Changelog and Release Notes</a>
+  </p>
+  <p>
+    ngx-foundation works with all core Foundation for Sites components powered by Angular. Original JS components like <code>jQuery</code> and <code>foundation.js</code> are not needed, but we are using markup and the base SCSS provided by Foundation for Sites. 
   </p>
   <p>Looking to integrate Bootstrap with your Angular SPA instead? Visit <a href="https://valor-software.com/ngx-bootstrap">ngx-bootstrap by Valor Software</a>.</p> 
 </section>
@@ -13,7 +16,7 @@
   <h3>Requirements</h3>
   <ul>
     <li>Foundation for Sites v6.4 or higher, SCSS version (CSS version coming soon)</li>
-    <li>Angular 6.X</li> 
+    <li>Angular 6 or 7</li> 
     <li>Angular project using SCSS as default</li>
     <li>"<a href="https://github.com/ten1seven/what-input" target="_blank">what-input.js</a>" install optional (Note: jQuery is not needed for what-input to function properly)</li>
   </ul>
@@ -55,7 +58,7 @@
 </section>
 
 <section>
-  <h4>Adding an ngx-foundation Component</h4>
+  <h4>Adding an ngx-foundation Module</h4>
   <p>As an example, open <code>src/app/app.module.ts</code> and add the following:</p>
   <pre><code highlight [code]="ngxComponents"></code></pre>
 </section>
@@ -67,18 +70,28 @@
   <p>If setup correctly, you should see a light green (or whatever color you assigned to $success-color) Callout box.</p>
 </section>
 
-<!-- 
+<hr>
+
 <section>
-  <h3>Starter Project</h3>
-  <p>The easiest way to get started is by cloning the starter project which sets up all base SCSS Foundation for Sites styling, a SCSS settings file so you can edit your own Foundation variables for unique styling, a global overrides file if you choose to add your own global styles, and lastly all ngx-foundation components and styles will be installed.</p>
+  <h3>Module List</h3>
+  <p>Available modules to import globally or to individual components:</p>
+  <pre><code highlight [code]="codeModuleList"></code></pre> <br>
+</section>
+
+<hr>
+
+<section>
+  <h3>Starter Project - Angular 7</h3>
+  <p>The easiest way to get started is by cloning the starter project which sets up Angular 7, all core SCSS Foundation for Sites default styling, a SCSS settings file so you can edit your own Foundation variables for unique styling, a global overrides file if you choose to add your own global styles, a basic site frame with a header and sticky footer, a demo page/component, and lastly all ngx-foundation modules and styles will be installed.</p>
   <p>cd to the directory where you wish to install the starter project and run the following command:</p>
   <pre><code highlight [code]="codeInstall04"></code></pre> <br>
   <p>
-    <fa-icon [icon]="faArrowAltCircleRight" size="sm" class="color" [fixedWidth]="true"></fa-icon> More detailed instructions on how to implement and work with the Starter Project can be found on the README file <a href="https://github.com/nthompson777/ngx-foundation-starterkit">here.</a>
+    More detailed instructions on how to implement and work with the <a href="https://github.com/nthompson777/ngx-foundation-starterkit">ngx-foundation Starter Kit can be found here on Github.</a>
   </p>
-</section> -->
+</section>
 
-<hr> 
+<hr>
+
 <section>
   <h3>Accessibility</h3>
   <h4>Overview and Limitations</h4>

@@ -94,10 +94,6 @@ section {
 	border-bottom: solid 1px #efefef;
 	box-shadow: 0 25px 20px -29px rgba(0,0,0,0.35);
 	width: 100%;
-
-	@include breakpoint(small only) {
-		margin-bottom: 0 !important;  // Unfortunately we have to use Important here.
-	}
 	
 	.mainlogo {
 		float: left;
@@ -111,7 +107,7 @@ section {
 		}
 	}
 
-	.appTitle {
+	.appName {
 		font-size: $appName-fontSize;
 		font-family: $appName-font-family;
 		letter-spacing: $appName-letter-spacing;
@@ -125,26 +121,10 @@ section {
 	}
 }
 
-//.menu .active a {
-//	pointer-events: none;
-// }
-
 .menu .active a,
 a.active {
 	color: $secondary-color; // $tertiary-color
 	background: none;
-}
-
-.menu .active a,
-a.menu.active {
-
-	&:before {
-		content: '>';
-		margin-right: 5px;
-		line-height: 0.8;
-		float: left;
-    margin-bottom: 10px;
-	}
 }
 
 .menu > li > a {
@@ -555,7 +535,6 @@ li.tabs-title {
 		filter: invert(100%);
 	}
 }
-
 
 // Webfonts
 // --------------------------------
