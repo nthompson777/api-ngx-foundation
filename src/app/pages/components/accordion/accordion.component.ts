@@ -35,7 +35,7 @@ export class AppModule(){}`;
   basicTemplate =
 `<accordion>
   <accordion-group [isDisabled]="true" heading="Static Header, Disabled">
-    End User shouldn't be able to see this shtuff since it's disabled.
+    End user shouldn't be able to see this content since it's disabled.
   </accordion-group>
   <accordion-group heading="Another group">
     <p>Some content</p>

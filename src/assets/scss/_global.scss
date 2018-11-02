@@ -112,11 +112,10 @@ section {
 		font-family: $appName-font-family;
 		letter-spacing: $appName-letter-spacing;
 		color: $appName-fontColor;
-		margin-top: 1px;
 
 		@include breakpoint(small only) {
 			font-size: $appName-fontSize - .3em;
-			margin-top: 5px;
+			line-height: 1.9;
 		}
 	}
 }

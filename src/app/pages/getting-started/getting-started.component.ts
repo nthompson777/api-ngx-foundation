@@ -163,7 +163,7 @@ codeInstall04 =
 `git clone https://github.com/nthompson777/ngx-foundation-starterkit`;
 
 ngxComponentHTML =
-`<alert type="success">hello</alert>`;
+`<alert type="success">Hello, I'm a Success Callout Alert</alert>`;
 
   constructor() { }
 }

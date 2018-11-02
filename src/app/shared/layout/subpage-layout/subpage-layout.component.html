@@ -7,7 +7,7 @@
           <div class="medium-3 large-2 cell sidenav">
             <app-sidenav></app-sidenav>
           </div><!-- /cell -->
-          <div class="medium-8 large-10 cell" [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
+          <div class="medium-9 large-10 cell" [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
             <router-outlet (activate)="onActivate($event)" #o="outlet"></router-outlet>
           </div><!-- /cell -->
         </div><!-- /grid -->
