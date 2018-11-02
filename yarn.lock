@@ -3458,10 +3458,10 @@ forwarded@~0.1.2:
   resolved "https://registry.yarnpkg.com/forwarded/-/forwarded-0.1.2.tgz#98c23dab1175657b8c0573e8ceccd91b0ff18c84"
   integrity sha1-mMI9qxF1ZXuMBXPozszZGw/xjIQ=
 
-foundation-sites@^6.5.0-rc.4:
-  version "6.5.0-rc.4"
-  resolved "https://registry.yarnpkg.com/foundation-sites/-/foundation-sites-6.5.0-rc.4.tgz#5d7912be38c38d2d7c1d81c264c7b886a4bd73d0"
-  integrity sha512-F1KEw9eK1+y0sznyiWXDLoNLUnUir7g5LHGSa/+zy/gAWkTBO9t1H+Wvw+d34ZkYgLNkbU3n2mJtADzS7f3fjQ==
+foundation-sites@6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/foundation-sites/-/foundation-sites-6.5.0.tgz#7bd4cb33977cbcb8a1cae5ad32c7c0de0fdbfc71"
+  integrity sha512-iV7+/4GxR4lQKxUh7geY6dxUSKbn6w+vbZzeG8U7JiTqStfPtTS+jaepKymw5OhrmD4BYpshyDktUiEshlY60g==
 
 fragment-cache@^0.2.1:
   version "0.2.1"
@@ -6098,10 +6098,10 @@ next-tick@1:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
-ngx-foundation@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/ngx-foundation/-/ngx-foundation-1.0.5.tgz#f911c59df46c91990059258cb1cc711e93869cf4"
-  integrity sha512-3LHdhXUJtW8MAkMd2J54SPW8pkwaq256q83vfIxcvjsJoEYx56InUcMptpu1KI0LEE3SXrlQ3cI0UqV/xGqryQ==
+ngx-foundation@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/ngx-foundation/-/ngx-foundation-1.0.6.tgz#633115083537e2d1c2fbf0cbc97fac9df2ee8013"
+  integrity sha512-zAE7oC+eqvyCdz/Vz2sL23tRFcQGviFYbY4MlpciQIBIHgKSATsSZLJlzNnUOK/nLBoWSneKCVrFscYBkXaz6Q==
 
 ngx-highlightjs@^2.1.1:
   version "2.1.1"

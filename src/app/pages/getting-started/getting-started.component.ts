@@ -25,13 +25,13 @@ npm install ngx-foundation foundation-sites --save`;
 <!-- index.html -->
 <link rel="stylesheet" href="node_modules/foundation-sites/dist/css/foundation-sites.min.css">
 Or CDN:
-<link href="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/css/foundation.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0/dist/css/foundation.min.css" rel="stylesheet">
 
 ngx-foundation CSS:
 <!-- index.html -->
 <link rel="stylesheet" href="node_modules/ngx-foundation/dist/css/ngx-foundation.min.css">
 Or CDN:
-<link href="https://cdn.jsdelivr.net/npm/ngx-foundation@1.0.5/dist/css/ngx-foundation.min.css" rel="stylesheet">`;
+<link href="https://cdn.jsdelivr.net/npm/ngx-foundation@1.0.6/dist/css/ngx-foundation.min.css" rel="stylesheet">`;
 
   codeInstallNgNew =
 `ng new YOUR_PROJECT_NAME_HERE --style = scss`;

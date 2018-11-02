@@ -1,6 +1,6 @@
 {
   "name": "api-ngx-foundation",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -32,8 +32,8 @@
     "angular-fontawesome": "^1.0.0",
     "classlist.js": "^1.1.20150312",
     "core-js": "^2.4.1",
-    "foundation-sites": "^6.5.0-rc.4",
-    "ngx-foundation": "^1.0.5",
+    "foundation-sites": "6.5.0",
+    "ngx-foundation": "^1.0.6",
     "ngx-highlightjs": "^2.1.1",
     "rxjs": "^6.3.3",
     "what-input": "^5.1.1",
