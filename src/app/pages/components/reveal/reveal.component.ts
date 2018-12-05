@@ -188,6 +188,11 @@ declarations: [
   DialogBodyComponent,
 ],
 
+// Add MessageService (the service you created in Step 3) to the providers array:
+providers: [
+  MessageService
+],
+
 // Add the entryComponents array below the 'bootstrap' array:
 
 bootstrap: [AppComponent,...],

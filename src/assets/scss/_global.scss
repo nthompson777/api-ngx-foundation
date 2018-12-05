@@ -52,6 +52,10 @@ footer {
 .off-canvas-wrapper {
 	// Sticky Footer (stuck to bottom of viewport no matter the height of body content)
 	min-height: calc(100vh - 239px);  // 100vh minus the height of the footer (only for static footer height)
+	
+	@include breakpoint(small only) {
+		margin-top: 50px;
+	}
 }
 
 main.grid-container-fluid,
@@ -94,6 +98,14 @@ section {
 	border-bottom: solid 1px #efefef;
 	box-shadow: 0 25px 20px -29px rgba(0,0,0,0.35);
 	width: 100%;
+
+	@include breakpoint(small only) {
+		position: fixed;
+    top: 0;
+    width: 100%;
+		height: auto;
+		z-index: 1005;
+	}
 	
 	.mainlogo {
 		float: left;
