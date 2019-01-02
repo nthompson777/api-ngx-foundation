@@ -203,8 +203,13 @@ a.active {
 	overflow-y: auto;
 }
 
+.off-canvas.is-transition-overlap {
+	z-index: 1005;
+}
+
 .off-canvas {
-	
+	z-index: 1005;
+		
 	li {
 
 		&.active > a {
