@@ -12,6 +12,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HeaderComponent } from './shared/layout/header/header.component';
 import { FooterComponent } from './shared/layout/footer/footer.component';
 import { SidenavComponent } from './shared/layout/sidenav/sidenav.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+import { HttpClientModule } from '@angular/common/http';
+import { PushNotificationService } from './services/push-notification.service';
 
 
 @NgModule({
@@ -28,8 +32,11 @@ import { SidenavComponent } from './shared/layout/sidenav/sidenav.component';
     BrowserAnimationsModule,
     FontAwesomeModule,
     AppRoutingModule,
+    HttpClientModule,
     OffcanvasModule.forRoot(),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
+  providers: [PushNotificationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
