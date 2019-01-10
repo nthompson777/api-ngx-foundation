@@ -6325,10 +6325,10 @@ next-tick@1:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
-ngx-foundation@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/ngx-foundation/-/ngx-foundation-1.0.6.tgz#633115083537e2d1c2fbf0cbc97fac9df2ee8013"
-  integrity sha512-zAE7oC+eqvyCdz/Vz2sL23tRFcQGviFYbY4MlpciQIBIHgKSATsSZLJlzNnUOK/nLBoWSneKCVrFscYBkXaz6Q==
+ngx-foundation@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/ngx-foundation/-/ngx-foundation-1.0.8.tgz#d80ea0783e3ff9a23a7a17dd4c1848d2b808e712"
+  integrity sha512-TEJDyVkagTR54nbA5zM0H6onCP/qP2PlWqHt39eZuNB4CmEyBa32ykj9NMY6S/o0jVCyT401oEcnhzCXHYOrig==
 
 ngx-highlightjs@2.1.4:
   version "2.1.4"

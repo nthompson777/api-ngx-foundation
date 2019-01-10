@@ -135,7 +135,7 @@
 <section>
   <h4>Dynamic Body Content</h4>
   <accordion>
-    <accordion-group heading="Dynamic Body Content">
+    <accordion-group heading="Dynamic Body Content" [isOpen]="isFirstOpen">
       <p>The body of the accordion group grows to fit the contents</p>
       <button type="button" class="button primary tiny" (click)="addItem()">Add
         Item
